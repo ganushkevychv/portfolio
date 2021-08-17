@@ -1,7 +1,38 @@
-.App {
-  text-align: center;
+
+/*Layout*/
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  min-height: 100vh;
+  border: 15px solid white;
 }
 
+ .block {
+  width: 100%;
+  min-width: 50%;
+  min-height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.one {
+  background-color: #dadada;
+  
+}
+a:link {
+  text-decoration: none;
+}
+.two {
+  background-color: #551A8B;
+}
+.three {
+  background-color: #e61c3f;
+}
+.four {
+  background-color: pink;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,16 +44,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
