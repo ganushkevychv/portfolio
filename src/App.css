@@ -11,7 +11,6 @@
   margin-bottom: 15px;
 }
 .container-flex-three {
-
   padding-top: 0px;
 }
 
@@ -31,15 +30,16 @@
   color: #a5142d;
   font-size: 20px;
 }
+.text-block-six {
+  font-size: 20px;
+  padding-left: 55px;
+}
 
 .one {
   background-color: #dadada;
-
 }
-
 a:link {
   text-decoration: none;
-  
 }
 .two {
   background-color: #b3d4fc;
@@ -51,7 +51,7 @@ a:link {
   background-color: pink;
 }
 .five {
-  background-color: grey;
+  background-color: lightgrey;
 }
 .six {
   background-color: #b3d4fc;
@@ -92,17 +92,18 @@ a:link {
 .imgHeart:hover {
   animation: heartbeat 1s infinite;
 }
-.iconfacebook {
-  background-color: chocolate;
+.facebook,.gmail,.instagram {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  margin-bottom: -50px;
+  padding-right: 5px;
+}
+.facebook:hover,.gmail:hover,.instagram:hover {
+  animation: heartbeat 1s infinite;
 }
 /* Layout end */
 @media screen and (max-width: 800px) {
   /*Layout start */
-  .flex-container, .container-flex {
+  .flex-container, .container-flex, .container-flex-three {
     display: flex;
     flex-wrap:wrap;
     min-height: 100vh;

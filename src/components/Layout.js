@@ -2,6 +2,9 @@ import React from 'react';
 import LogoSmall from '../img/icons/logosmall.png'
 import Love from '../img/icons/love.png';
 import Plane from '../img/icons/plane.png';
+import Facebook from '../img/icons/facebook.png';
+import Gmail from '../img/icons/gmail.png';
+import Instagram from '../img/icons/instagram.png';
 
 const Layout = () => {
   return (
@@ -31,7 +34,7 @@ const Layout = () => {
     <a className="imgHeart" href="/About">
       
       <img
-      className="imgHeart"  
+       
       src={Love} 
       alt="heart"
       style={{paddingLeft:"15px",
@@ -44,58 +47,76 @@ const Layout = () => {
     </div>
     <div className="container-flex">
     <div className="block three">
-    <a href="#">
+    <a href="#" className="imgHeart">
+      <img 
+      className="img-plane"
+      src={Plane} 
+      alt="plane"
+      style={{
+      paddingBottom:"10px",
+      paddingLeft: "10px"
+    }}
+      />
+      <p className="text-block-one">CONTACT</p>
+      </a>
+         
+    </div>
+    <div className="block four">
+    <div>
       
       <p className="text-block-three">WELCOME</p>
       <p className="text-block-three">I AM ANASTASIIA GANUSHKEVYCH</p>
       <p className="text-block-three">AND I'M A PROFESSIONAL PHOTOGRAPHER</p>
-      </a>
+      </div>
      
-    </div>
-    <div className="block four">
-      <a>
-    <p className="text-block-one">SOCIAL</p>
-    <a href="/">
-      <img 
-      className="img" 
-      src={Plane} 
-      alt="plane"
-      style={{
-      paddingBottom:"10px"
-    }}
-      />
-      
-      </a>
-      </a>
-      
     </div>
     
     </div>
     <div className="container-flex-three">
     <div className="block five">
-    <a href="#">
-      
-      <p className="text-block-three">WELCOME</p>
-      <p className="text-block-three">I AM ANASTASIIA GANUSHKEVYCH</p>
-      <p className="text-block-three">AND I'M A PROFESSIONAL PHOTOGRAPHER</p>
+    <div>
+      <a href="https://www.facebook.com/AnastasiiaGanushkevych/photos/?ref=page_internal" aria-label="Facebook">
+      <p className="text-block-three">GALLERY</p>
       </a>
+      </div>
      
     </div>
     <div className="block six">
-      <a>
-    <p className="text-block-one">SOCIAL</p>
-    <a href="/">
+      <div>
+    <p className="text-block-six">SOCIAL</p>
+    <div>
+      <a href="https://www.facebook.com/AnastasiiaGanushkevych/" aria-label="Facebook">
       <img 
-      className="img" 
-      src={Plane} 
-      alt="plane"
+      className="facebook" 
+      src={Facebook} 
+      alt="facebook"
+      style={{
+      paddingBottom:"10px" 
+    }}
+      />
+      </a>
+      <a href="mailto:ganushkevycha@gmail.com" aria-label="Gmail">
+      <img 
+      className="gmail" 
+      src={Gmail} 
+      alt="gmail"
       style={{
       paddingBottom:"10px"
     }}
       />
-      
       </a>
+      <a href="https://www.instagram.com/nastkazgdanska/" aria-label="Instagram">
+      <img 
+      className="instagram" 
+      src={Instagram} 
+      alt="instagram"
+      style={{
+      paddingBottom:"10px"
+    }}
+      />
       </a>
+      </div>
+      </div>
       
     </div>
     
