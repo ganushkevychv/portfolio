@@ -27,7 +27,7 @@ const Layout = () => {
     </div>
     </div>
   
-    <div className="block two">
+    <div className="block two" id="block-two">
     <a className="imgHeart" href="/About">
       
       <img
@@ -53,6 +53,8 @@ const Layout = () => {
      
     </div>
     <div className="block four">
+      <a>
+    <p className="text-block-one">SOCIAL</p>
     <a href="/">
       <img 
       className="img" 
@@ -62,9 +64,41 @@ const Layout = () => {
       paddingBottom:"10px"
     }}
       />
-      <p className="text-block-one">SOCIAL</p>
+      
       </a>
+      </a>
+      
     </div>
+    
+    </div>
+    <div className="container-flex-three">
+    <div className="block five">
+    <a href="#">
+      
+      <p className="text-block-three">WELCOME</p>
+      <p className="text-block-three">I AM ANASTASIIA GANUSHKEVYCH</p>
+      <p className="text-block-three">AND I'M A PROFESSIONAL PHOTOGRAPHER</p>
+      </a>
+     
+    </div>
+    <div className="block six">
+      <a>
+    <p className="text-block-one">SOCIAL</p>
+    <a href="/">
+      <img 
+      className="img" 
+      src={Plane} 
+      alt="plane"
+      style={{
+      paddingBottom:"10px"
+    }}
+      />
+      
+      </a>
+      </a>
+      
+    </div>
+    
     </div>
     </div>
   );

@@ -1,24 +1,25 @@
 
 /*Layout start*/
-.flex-container, .container-flex {
+.flex-container, .container-flex, .container-flex-three {
   display: flex;
   flex-wrap:nowrap;
-  min-height: 50vh;
+  min-height: 40vh;
   margin-left: 15px;
   margin-right: 15px;
 }
-.container-flex {
+.container-flex-three {
   margin-bottom: 15px;
 }
-/* .flex-container {
-  margin-top: 15px;
-} */
+.container-flex-three {
+
+  padding-top: 0px;
+}
 
  .block {
   display: flex;
   width: 100%;
-  min-width: 25%;
-  min-height: 25%;
+  min-width: 15%;
+  min-height: 15%;
   align-items: center;
   justify-content: center;
 } 
@@ -48,6 +49,12 @@ a:link {
 }
 .four {
   background-color: pink;
+}
+.five {
+  background-color: grey;
+}
+.six {
+  background-color: #b3d4fc;
 }
 .App-logo {
   height: 40vmin;
@@ -80,6 +87,8 @@ a:link {
     transform: scale( .75 );
   }
 }
+
+
 .imgHeart:hover {
   animation: heartbeat 1s infinite;
 }
