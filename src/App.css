@@ -23,18 +23,23 @@
   justify-content: center;
 } 
 .text-block-one{
-  color: black;
+  color: rgba(0,0,0,.5);
   font-size: 20px;
 }
-.text-block-three{
-  color: #a5142d;
+.text-block-three, .text-block-five {
+  color: rgba(0,0,0,.5);
   font-size: 20px;
+}
+.text-block-five {
+  transition: transform .2s;
+}
+.text-block-five:hover{
+  transform: scale(1.5);
 }
 .text-block-six {
   font-size: 20px;
   padding-left: 55px;
 }
-
 .one {
   background-color: #dadada;
 }
@@ -42,16 +47,16 @@ a:link {
   text-decoration: none;
 }
 .two {
-  background-color: #b3d4fc;
+  background-color: #9DAAF2;
 }
 .three {
-  background-color: #e61c3f;
+  background-color: #FF6A3D;
 }
 .four {
-  background-color: pink;
+  background-color: #F4DB7D;
 }
 .five {
-  background-color: lightgrey;
+  background-color: #9DAAF2;
 }
 .six {
   background-color: #b3d4fc;

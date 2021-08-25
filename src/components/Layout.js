@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import LogoSmall from '../img/icons/logosmall.png'
 import Love from '../img/icons/love.png';
 import Plane from '../img/icons/plane.png';
@@ -6,43 +7,58 @@ import Facebook from '../img/icons/facebook.png';
 import Gmail from '../img/icons/gmail.png';
 import Instagram from '../img/icons/instagram.png';
 
-const Layout = () => {
+const Layout = (props) => {
+
+  const {
+    className
+  } = props;
+
+const [modal, setModal] = useState(false);
+
+const toggle = () => setModal(!modal);
+
   return (
     <div>
         
     <div id="app" className="flex-container">
     
     <div className="block one">
-    <a href="/">
+    <div>
       
     <img 
     className="img" 
     src={LogoSmall} 
     alt="camera"
     style={{paddingLeft:"50px",
-    paddingBottom:"10px"
+    paddingBottom:"10px",
+    
   }}
     />
     <p className="text-block-one">@nastkazgdanska</p>
-    </a>
+    </div>
     <div>
     
     </div>
     </div>
   
     <div className="block two" id="block-two">
-    <a className="imgHeart" href="/About">
+    <div className="imgHeart" href="/About" onClick={toggle}>
       
       <img
-       
       src={Love} 
       alt="heart"
       style={{paddingLeft:"15px",
       paddingBottom:"10px"
     }}
       />
-      <p className="text-block-one">About Me</p>
-      </a>
+    <p className="text-block-one">About Me</p>
+    <Modal isOpen={modal} toggle={toggle} className={className}>
+      <ModalHeader className="modal-button-close" toggle={toggle}></ModalHeader>
+      <ModalBody>
+    
+      </ModalBody>
+    </Modal>
+      </div>
     </div>
     </div>
     <div className="container-flex">
@@ -76,7 +92,7 @@ const Layout = () => {
     <div className="block five">
     <div>
       <a href="https://www.facebook.com/AnastasiiaGanushkevych/photos/?ref=page_internal" aria-label="Facebook">
-      <p className="text-block-three">GALLERY</p>
+      <p className="text-block-five">GALLERY</p>
       </a>
       </div>
      
