@@ -218,7 +218,7 @@ text-align: center !important;
 .modal-body {
   display: flex;
   justify-content: center;
-  padding-top: 40%;
+  
 }   
 .modal-header {
   padding: 0rem 0rem!important;
