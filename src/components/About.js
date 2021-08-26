@@ -10,7 +10,7 @@ const About = () => {
             <p>based in Trojmiasto, Poland</p>
             <p>for more details please<br/></p>
             <p>visit <a href="https://www.facebook.com/AnastasiiaGanushkevych/" className="about-gallery-link" aria-label="Facebook">GALLERY</a> or</p>
-            <p>contact me via mesenger</p>
+            <p>contact me via messenger</p>
         </div>
     )
 }
