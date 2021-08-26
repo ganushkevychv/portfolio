@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import About from './About';
 import LogoSmall from '../img/icons/logosmall.png'
 import Love from '../img/icons/love.png';
 import Plane from '../img/icons/plane.png';
@@ -55,7 +56,7 @@ const toggle = () => setModal(!modal);
     <Modal isOpen={modal} toggle={toggle} className={className}>
       <ModalHeader className="modal-button-close" toggle={toggle}></ModalHeader>
       <ModalBody>
-    
+    <About/>
       </ModalBody>
     </Modal>
       </div>

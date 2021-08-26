@@ -13,7 +13,6 @@ function App() {
      <Menu/>
      </div>
 <Layout/>
-
     </div>
   );
 }
