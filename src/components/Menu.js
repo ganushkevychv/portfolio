@@ -19,13 +19,13 @@ return(
       <ModalBody>
         <ul className="list-container">
         
-            <li className="list">HOME</li>
+            <li className="list home">HOME</li>
            
            
-            <li className="list">ABOUT</li>
+            <li className="list about">ABOUT</li>
             
            
-            <li className="list">CONTACT</li>
+            <li className="list contact">CONTACT</li>
             
  </ul>
       </ModalBody>

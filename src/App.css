@@ -154,12 +154,23 @@ a:link {
 .list {
   font-size: 30px;
   padding-top: 20px;
-  border-bottom: 1px solid #dee2e6;
+  transition: transform .2s;
+}
+.home {
+  border-bottom: 1px solid #F4DB7D;
+}
+.about {
+  border-bottom: 1px solid #9DAAF2;
+}
+.contact {
+  border-bottom: 1px solid #FF6A3D;
+}
+.home:hover, .about:hover, .contact:hover {
+  transform: scale(1.8);
 }
 .modal-button  {
 background-color: white !important;
 color: black !important;
-/* background: url(../src/img/icons/menu.svg) no-repeat; */
 width: 30px !important;
 height: 30px !important;
 border-color: white !important;
@@ -200,3 +211,19 @@ text-align: center !important;
     transform: rotate(360deg);
   }
 }
+/*about pop-up start*/
+.modal-content {
+  min-height: 90vh;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 40%;
+}   
+.modal-header {
+  padding: 0rem 0rem!important;
+}
+.close {
+  font-size: 15px;
+}
+
