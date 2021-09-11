@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import {useTranslation} from "react-i18next";
+import '../trans/i18n'
 import About from './About';
 import LogoSmall from '../img/icons/logosmall.png'
 import Love from '../img/icons/love.png';
@@ -9,6 +11,8 @@ import Gmail from '../img/icons/gmail.png';
 import Instagram from '../img/icons/instagram.png';
 
 const Layout = (props) => {
+
+  const { t } = useTranslation();
 
   const {
     className
@@ -35,7 +39,7 @@ const toggle = () => setModal(!modal);
     
   }}
     />
-    <p className="text-block-one">@nastkazgdanska</p>
+    <p className="text-block-one">{t("home.name")}</p>
     </div>
     <div>
     
@@ -92,7 +96,7 @@ const toggle = () => setModal(!modal);
     <div className="container-flex-three">
     <div className="block five">
     <div>
-      <a href="https://www.facebook.com/AnastasiiaGanushkevych/photos/?ref=page_internal" aria-label="Facebook">
+      <a href="https://www.instagram.com/nastkazgdanska/" aria-label="Instagram">
       <p className="text-block-five">GALLERY</p>
       </a>
       </div>
