@@ -3,19 +3,19 @@ export default {
         name:"@nastkazgdanska",
     },
     menu: {
-        home:"HOME",
-        about:"ABOUT",
-        contact:"CONTACT"
+        home:"STRONA GLOWNA",
+        about:"O MNIE",
+        contact:"KONTAKT"
 
     },
     about: {
-        about:"ABOUT ME",
+        about:"KONTAKT",
     },
     cards: {
-        contact:"CONTACT",
-        introduction:"WELCOME I AM ANASTASIIA GANUSHKEVYCH AND I'M A PROFESSIONAL PHOTOGRAPHER",
-        gallery:"GALLERY",
-        social:"SOCIAL"
+        contact:"KONTAKT",
+        introduction:"WITAM JESTEM ANASTASIIA GANUSHKEVYCH I JESTEM PROFESJONALNYM FOTOGRAFEM",
+        gallery:"GALERIA",
+        social:"PORTALE SPOLECZNOSCIOWE"
     }
     
     };
